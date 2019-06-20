@@ -116,32 +116,39 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-						<span>Eusipco 2019</span>
-						<h2>Source separation & data augmentation</h2>
+						<span>AES SEMANTIC AUDIO 2017</span>
+						<h2>Music Structure Boundaries Estimation</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="rotate">
-							<h2 class="heading">Eusipco 2019</h2>
+							<h2 class="heading">AES 2017</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-1.jpg);">
-							</a>
+							<!-- <a href="papers.html" class="work-img" style="background-image: url(images/work-2.jpg);">
+							</a> -->
+							<img class="img-responsive" src="images/work-2.jpg" alt="html5 bootstrap template by colorlib.com" /><br>
 							<div class="col-md-8 col-md-offset-2">
 								<div class="desc">
 									<h2>Abstract</h2>
-									<p>State-of-the-art singing voice separation is based on deep learning making use of CNN structures with skip connections (like U-net model, Wave-U-Net model, or MSDENSELSTM). A key to the success of these models is the availability of a large amount of training data. In the following study, we are interested in singing voice separation for mono signals and will investigate into comparing the U-Net and the Wave-U-Net that are structurally similar, but work on different input representations. </p>
 									<p>
-										First, we report a few results on variations of the U-Net model. Second, we will discuss the potential of state of the art speech and music transformation algorithms for augmentation of existing data sets and demonstrate that the effect of these augmentations depends on the signal representations used by the model. The results demonstrate a considerable improvement due to the augmentation for both models. But pitch transposition is the most effective augmentation strategy for the U-Net model, while transposition, time stretching, and formant shifting have a much more balanced effect on the Wave-U-Net model. Finally, we compare the two models on the same dataset.
+										In this paper, we propose a new representation as input of a Convolutional Neural Network with the goal of estimating music structure boundaries.
+										For this task, previous works used a network performing the late-fusion of a Mel-scaled log-magnitude spectrogram and a self-similarity-lag-matrix.
 									</p>
-									<img class="img-responsive" src="images/work-9.png" alt="html5 bootstrap template by colorlib.com"><br>
-									<p class="read"><a href="http://eusipco2019.org/">Accepted at Eusipco 2019 </p>
-									<p class="read"><a href="https://arxiv.org/pdf/1903.01415.pdf">PDF link</a></p>
+									<p>
+										We propose here to use the square-sub-matrices centered on the main diagonals of several self-similarity-matrices, each one representing a different audio descriptors.
+										We propose to combine them using the depth of the input layer.
+										We show that this representation improves the results over the use of the self-similarity-lag-matrix.
+										We also show that using the depth of the input layer provide a convenient way for early fusion of audio representations.
+									</p>
+									<img class="img-responsive" src="images/work-10.png" alt="html5 bootstrap template by colorlib.com" /><br>
+									<p class="read"><a href="http://www.aes.org/conferences/2017/semantic/">Accepted at AES SEMANTIC AUDIO 2017 </p>
+									<p class="read"><a href="https://hal.archives-ouvertes.fr/hal-01534850/document">PDF link</a></p>
 								</div>
 							</div>
 						</div>

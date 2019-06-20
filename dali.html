@@ -116,32 +116,52 @@
 				</div>
 				<div class="row">
 					<div class="col-md-12 col-md-offset-0 text-center animate-box intro-heading">
-						<span>Eusipco 2019</span>
-						<h2>Source separation & data augmentation</h2>
+						<span>ISMIR 2018</span>
+						<h2>The Dali Dataset</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="rotate">
-							<h2 class="heading">Eusipco 2019</h2>
+							<h2 class="heading">ISMIR 2018</h2>
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="work-entry animate-box">
-							<a href="work.html" class="work-img" style="background-image: url(images/work-1.jpg);">
-							</a>
+							<!-- <a href="papers.html" class="work-img" style="background-image: url(images/work-2.jpg);">
+							</a> -->
+							<img class="img-responsive" src="images/work-11.png" alt="html5 bootstrap template by colorlib.com" /><br>
 							<div class="col-md-8 col-md-offset-2">
 								<div class="desc">
 									<h2>Abstract</h2>
-									<p>State-of-the-art singing voice separation is based on deep learning making use of CNN structures with skip connections (like U-net model, Wave-U-Net model, or MSDENSELSTM). A key to the success of these models is the availability of a large amount of training data. In the following study, we are interested in singing voice separation for mono signals and will investigate into comparing the U-Net and the Wave-U-Net that are structurally similar, but work on different input representations. </p>
 									<p>
-										First, we report a few results on variations of the U-Net model. Second, we will discuss the potential of state of the art speech and music transformation algorithms for augmentation of existing data sets and demonstrate that the effect of these augmentations depends on the signal representations used by the model. The results demonstrate a considerable improvement due to the augmentation for both models. But pitch transposition is the most effective augmentation strategy for the U-Net model, while transposition, time stretching, and formant shifting have a much more balanced effect on the Wave-U-Net model. Finally, we compare the two models on the same dataset.
+										The goal of this paper is twofold. First, we introduce DALI, a large and rich multimodal dataset containing 5358 audio tracks with their time-aligned vocal melody notes
+and lyrics at four levels of granularity.
 									</p>
-									<img class="img-responsive" src="images/work-9.png" alt="html5 bootstrap template by colorlib.com"><br>
-									<p class="read"><a href="http://eusipco2019.org/">Accepted at Eusipco 2019 </p>
-									<p class="read"><a href="https://arxiv.org/pdf/1903.01415.pdf">PDF link</a></p>
+									<p>
+										The second goal is to explain our methodology where
+									dataset creation and learning models interact using a
+									teacher-student machine learning paradigm that benefits
+									each other. We start with a set of manual annotations of
+									draft time-aligned lyrics and notes made by non-expert
+									users of Karaoke games. This set comes without audio.
+									Therefore, we need to find the corresponding audio and
+									adapt the annotations to it. To that end, we retrieve audio
+									candidates from the Web. Each candidate is then turned
+									into a singing-voice probability over time using a teacher,
+									a deep convolutional neural network singing-voice detection system (SVD), trained on cleaned data. Comparing
+									the time-aligned lyrics and the singing-voice probability,
+									we detect matches and update the time-alignment lyrics accordingly. From this, we obtain new audio sets. They are
+									then used to train new SVD students used to perform again
+									the above comparison. The process could be repeated iteratively. We show that this allows to progressively improve the performances of our SVD and get better audiomatching and alignment.
+									</p>
+									<img class="img-responsive" src="images/work-12.png" alt="html5 bootstrap template by colorlib.com" /><br>
+									<p> This work has been realised in colaboration with Gabriel Meseguer Brocal. </p>
+									<p class="read"><a href="http://ismir2018.ircam.fr/">Accepted at ISMIR 2018 </p>
+										<p class="read"><a href="https://github.com/gabolsgabs/DALI">Downlad the dataset and API </p>
+									<p class="read"><a href="http://ismir2018.ircam.fr/doc/pdfs/35_Paper.pdf">PDF link</a></p>
 								</div>
 							</div>
 						</div>
